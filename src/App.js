@@ -1,12 +1,31 @@
-import React from 'react'
+import React from 'react';
+import styles from './style';
 
 const App = () => {
   return (
-    <>
-      <h1 className='bg-gray-200 text-2xl text-center text-black '>
-        Hello WORLD
-      </h1>
-    </>
+    <div className='bg-primary w-full overflow-hidden'>
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          {/* Navbar */}
+        </div>
+      </div>
+
+      <div className={`bg-primary ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          {/* Hero */}
+        </div>
+      </div>
+
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          {/* 
+          Stats
+          Buis
+           */}
+        </div>
+
+      </div>
+    </div >
   )
 }
 
